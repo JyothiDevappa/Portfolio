@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      background-image: url("navyblue.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 10px;
+      perspective: 1000px;
+      min-height: 100vh;
+    }
+
+    #navbar {
+      margin-bottom: 30px;
+    }
+
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 40px 40px;
+    }
+
+    .project-box {
+      background-color: #11254b;
+      border-radius: 25px;
+      padding: 30px;
+      width: 300px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      transition: transform 0.4s ease, box-shadow 0.5s ease;
+      transform-style: preserve-3d;
+    }
+
+    .project-box:hover {
+      transform: rotateX(5deg) rotateY(-5deg) scale(1.05);
+      box-shadow: 0 25px 40px rgba(135, 206, 250, 0.6); /* Skyblue 3D shadow */
+    }
+
+    .project-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #f3f0f0;
+    }
+
+    .project-description {
+      font-size: 1em;
+      color: #868080;
+      margin-bottom: 15px;
+    }
+
+    .project-link {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <div class="projects-container">
+    <div class="project-box">
+      <div class="project-title">TuneHub (Music Streaming Application)</div>
+      <div class="project-description">
+        TuneHub is a music streaming web application built using Java, Spring Boot, Thymeleaf, HTML, and CSS. It allows users to register as admins or customers. Admins can add and manage songs and playlists, while customers can browse music, create their own playlists, and enjoy seamless music playback.
+      </div>
+      <a class="project-link" href="https://github.com/JyothiDevappa/tunehub" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Portfolio Website</div>
+      <div class="project-description">
+        This is my personal portfolio website that showcases my skills, projects, and contact information in a clean and professional layout.
+      </div>
+      <a class="project-link" href="https://github.com/JyothiDevappa/Portfolio" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">Art Gallery Management System</div>
+      <div class="project-description">
+        This project is an online platform where artists can showcase their artworks and users can explore, review, and purchase them—similar to an e-commerce site. Users can also view artist profiles, leave feedback, and connect directly with the artists. It was designed with user-friendly navigation for both artists and customers.
+      </div>
+      <a class="project-link" href="#" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-box">
+      <div class="project-title">My Journal (Personal Day Playlist)</div>
+      <div class="project-description">
+        This is a creative, personal project that presents a journal as a “playlist of her days.” Each entry reflects the mood or theme of Jo's day—like a diary with emotional tunes or moments. It’s a fun blend of storytelling and simple UI, showing how code can express personal life and creativity.
+      </div>
+      <a class="project-link" href="https://github.com/JyothiDevappa/The-Playlist-of-Her-Days" target="_blank">View Project</a>
+    </div>
+
+    
+    <div class="project-box">
+      <div class="project-title">Login Page</div>
+      <div class="project-description">
+        A simple login page that allows users to securely log in to their account. The page includes basic input fields for the username and password, along with a submit button and form validation.
+      </div>
+      <a class="project-link" href="https://github.com/JyothiDevappa/login-page/tree/main/Login%20Page" target="_blank">View Project</a>
+    </div>
+    
+
+    <div class="project-box">
+      <div class="project-title">Menu Card (Hotel Application)</div>
+      <div class="project-description">
+        This project simulates a hotel’s menu card, where users can browse the menu, select items, and place orders. It demonstrates basic UI design and handling user input through forms, along with displaying dynamic content based on the user's choices.
+      </div>
+      <a class="project-link" href="#" target="_blank">View Project</a>
+    </div>
+
+  </div>
+
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+    <!-- This will include the same navbar everywhere -->
+<div id="navbar"></div>
+
+    <div class="contact-container">
+        <h1>Contact Me</h1>
+
+        <form class="contact-form">
+            <div class="input-row">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-row">
+                <input type="tel" name="mobile" placeholder="Mobile Number" required>
+                <input type="text" name="subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Click</button>
+        </form>
+    </div>
+    <script>
+        fetch("navbar.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("navbar").innerHTML = data;
+          });
+      </script>
+      
+</body>
+</html>

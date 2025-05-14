@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me</title>
+  <style>
+    body {
+      margin: 0;
+      
+      background-color: #0c1c3b;
+      font-family: Arial, sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 50px; /* Gap between the boxes */
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding: 60px 40px 40px 40px;
+    }
+
+    .section {
+      width: 32%;
+      background-color: #11254b;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.4),
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        inset 0 1px 2px rgba(255, 255, 255, 0.1); /* Inner light edge */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .section:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow:
+        0 14px 28px rgba(147, 206, 229, 0.5),
+        0 24px 48px rgba(0, 0, 0, 0.4),
+        inset 0 1px 3px rgba(255, 255, 255, 0.15);
+    }
+
+    .photo-container {
+      text-align: center;
+    }
+
+    .photo-container img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .photo-container h1 {
+      font-size: 34px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .icon-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .icon-links a {
+      margin: 0 10px;
+    }
+
+    .icon-links img {
+      width: 30px;
+      height: 30px;
+      filter: drop-shadow(0 1px 2px black);
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #fff;
+      text-shadow: 1px 1px 2px black;
+      border-bottom: 2px solid #00ffff;
+      padding-bottom: 5px;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- This will include the same navbar everywhere -->
+<div id="navbar"></div>
+
+
+  <!-- Part 1: Name, Photo, Objective, Icons -->
+  <div class="section">
+    <div class="photo-container">
+      <h1>Jyothi Devappa</h1>
+      <img src="photo.png" alt="Jyothi Devappa">
+    </div>
+    <h2>Objective</h2>
+    <p>I’m a passionate full stack developer, always eager to learn and build meaningful web applications. My goal is to grow as a developer while creating impactful solutions.</p>
+    <div class="icon-links">
+      <a href="mailto:jyothidevappa@gmail.com" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+      <a href="https://www.linkedin.com/in/jyothidevappa/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/JyothiDevappa" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      </a>
+    </div>
+  </div>
+
+  <!-- Part 2: Education, Course, Skills -->
+  <div class="section">
+    <h2 style="font-weight:bold; text-shadow: 2px 2px black;">Education</h2>
+    <p><strong>1. Bachelor of Computer Application - 7 CGPA</strong><br>
+    JSS College for Women - Chamarajanagar<br>
+    University of Mysore (2020 - 2023)</p>
+
+    <h2 style="font-weight:bold; text-shadow: 2px 2px black;">Course</h2>
+    <p><strong>Full Stack Development</strong><br>
+    At KodNest Institute (2023 - 2024)<br>
+    BTM Layout, Bangalore</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>Java</li>
+      <li>HTML, CSS</li>
+      <li>MySQL</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>Spring Boot</li>
+    </ul>
+  </div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+  
+
+</body>
+</html>

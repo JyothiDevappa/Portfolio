@@ -1,0 +1,22 @@
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #00ffff;
+}

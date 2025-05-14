@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hire Me</title>
+  <style>
+    body {
+      background-color: #0c1c3b;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2),
+              0 20px 60px rgba(0, 255, 255, 0.1),
+              inset 0 0 10px rgba(255, 255, 255, 0.05);
+  max-width: 600px;
+  width: 100%;
+  transform: perspective(1000px) rotateX(3deg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: perspective(900px) rotateX(0deg) translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 255, 255, 0.4),
+              0 30px 80px rgba(0, 255, 255, 0.2),
+              inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+    .container p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+
+    .contact-info a {
+      color: #00ffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .icons {
+      margin-top: 20px;
+    }
+
+    .icons a img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .icons a img:hover {
+      transform: scale(1.4);
+    }
+  </style>
+</head>
+<body>
+  <div id="navbar"></div>
+
+  <div class="container">
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:jyothidevappa@gmail.com">jyothidevappa@gmail.com</a></p>
+      
+      <p><strong>Resume:</strong> <a href="resume.pdf" download>Download My Resume</a></p>
+    </div>
+
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/jyothidevappa/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="https://github.com/JyothiDevappa" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      </a>
+    </div>
+  </div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+  
+
+</body>
+</html>
+ 

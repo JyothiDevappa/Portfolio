@@ -1,0 +1,67 @@
+body {
+    background-image: url("navyblue.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+.contact-container {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact-container h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: white;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffffc9;
+    color: black;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #00ffff;
+    color: black;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #00cccc;
+}

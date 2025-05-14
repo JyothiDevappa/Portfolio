@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <div id="navbar"></div>
+  
+  <div class="intro-text">
+    <h1>I'm Jyothi Devappa</h1>
+
+    <div class="intro-text1">
+      <h2>Full Stack Developer</h2>
+      <img src="photo.png" alt="Profile Picture" class="profile-pic">
+
+      <p class="intro-text2">
+        Hi, I’m Jyoti Devappa. I enjoy building simple and useful web applications.<br>
+        I’m always learning and now turning ideas into working projects.
+      </p>
+
+      <div class="button-group">
+        <a href="contact.html" class="btn">Contact</a>
+        <a href="hireme.html" class="btn">Hire Me</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+  
+
+</body>
+</html>
