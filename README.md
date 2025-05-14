@@ -34,6 +34,10 @@ This project showcases my skills, projects, and experiences as a developer in a 
 - **Tools:** Visual Studio Code, Git, GitHub
 
 ---
+## 📬 Contact
 
-## 📁 Folder Structure
+- ✉️ Email: [jyothi -jyothidevappas@gmail.com]
+- 💼 LinkedIn: [https://www.linkedin.com/in/jyothidevappa]
+
+
 
