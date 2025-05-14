@@ -1,8 +1,10 @@
 # 💼 Portfolio - Jyothi Devappa
 
-Welcome to my personal portfolio website!  
-This project showcases my skills, projects, and experiences as a developer in a clean, responsive, and user-friendly format.
+Welcome to my personal portfolio, where I showcase the projects I’ve built with passion, creativity, and purpose. From storytelling-based web pages to real-time applications, this space reflects my journey as a BCA graduate and a full-stack development enthusiast.
 
+🔹 Projects built using Java, Spring Boot, HTML, CSS, MySQL
+🔹 Includes creative designs, practical solutions, and clean code
+🔹 Each project highlights my growth, skills, and storytelling style
 ---
 
 ## 🚀 Features
@@ -28,10 +30,6 @@ This project showcases my skills, projects, and experiences as a developer in a 
 ![Slide 5](images/slide5.png)
 
 
-## 🧰 Tech Stack
-
-- **Frontend:** HTML5, CSS3, JavaScript
-- **Tools:** Visual Studio Code, Git, GitHub
 
 ---
 ## 📬 Contact
