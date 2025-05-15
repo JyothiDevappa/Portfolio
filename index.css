@@ -1,65 +1,70 @@
 body {
-  background-image: url("navyblue.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    background-image: url("navyblue.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
 }
 
-/* MAIN CONTAINER TO CONTROL FLOW */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
-  padding-top: 80px;
-  color: white;
-}
 
-/* TEXT */
-.intro-text {
-  font-size: 38px;
-  font-weight: bold;
-  color: rgb(187, 178, 178);
-}
+  .intro-text {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: rgb(187, 178, 178);
+    font-size: 38px;
+    font-weight: bold;
+  }
+  
+ 
 
 .intro-text1 {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+   transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: bold;
-  margin-top: 10px;
-  color: rgb(255, 255, 255);
-  white-space: nowrap;
+  white-space: nowrap; /* 💥 This prevents line break */
+  text-shadow: #cedbdb;
 }
-
-/* PROFILE PIC */
 .profile-pic {
-  margin-top: 30px;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 8px rgba(12, 16, 39, 0.4);
-}
+  position: absolute;
+  top: 150%;
+  left: 330%; /* Distance from the right edge */
+  transform: translateY(-50%);
+ 
+  border-radius: 70px; /* Optional: smooth edges */
+  box-shadow: 0 4px 8px rgba(12, 16, 39, 0.4); /* Optional: subtle shadow */
 
-/* ABOUT TEXT */
+  width: 300px;       /* or any size you like */
+  height: 300px;      /* make width & height equal */
+  border-radius: 50%; /* 💫 This makes it round */
+  object-fit: cover; 
+}
 .intro-text2 {
-  font-size: 20px;
-  margin-top: 20px;
-  max-width: 400px;
-  line-height: 1.5;
+  position: absolute;
+  top: 150%;  /* Adjust this based on where you want it */
+  left: 80%;
+  transform: translate(-50%, -50%);
   color: rgb(162, 162, 168);
+  font-size: 20px;
+  font-weight: normal;
+  
+  width: 400px;
+  line-height: 1.5;
 }
-
-/* BUTTONS */
 .button-group {
+  position: absolute;
+  top: 320%;
+  left: 100%;
+  transform: translate(-50%, -50%);
   display: flex;
-  gap: 20px;
-  margin-top: 25px;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 30px;
 }
 
 .btn {
@@ -72,35 +77,10 @@ body {
   border-radius: 25px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  
 }
 
 .btn:hover {
   background-color: #00ffff;
   color: #000;
-}
-
-/* MOBILE FRIENDLY */
-@media (max-width: 768px) {
-  .intro-text {
-    font-size: 28px;
-  }
-
-  .intro-text1 {
-    font-size: 16px;
-    white-space: normal;
-  }
-
-  .profile-pic {
-    width: 180px;
-    height: 180px;
-  }
-
-  .intro-text2 {
-    font-size: 16px;
-    padding: 0 20px;
-  }
-
-  .button-group {
-    gap: 15px;
-  }
 }
