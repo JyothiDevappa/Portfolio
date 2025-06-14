@@ -1,0 +1,175 @@
+body {
+    background-image: url("navyblue.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /* ✅ remove horizontal scrolling */
+ display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.main-content {
+    position: relative;
+    box-sizing: border-box;
+    flex: 1;
+  width: 100%;
+  top: 10px;
+
+}
+
+/* Your original absolute positioning remains same: */
+
+.intro-text {
+    position: absolute;
+    top: 33%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: rgb(187, 178, 178);
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.intro-text1 {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-shadow: #cedbdb;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 120%;
+    left: 330%;
+    transform: translateY(-50%);
+    border-radius: 70px;
+    box-shadow: 0 4px 8px rgba(12, 16, 39, 0.4);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intro-text2 {
+    position: absolute;
+    top: 150%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: rgb(162, 162, 168);
+    font-size: 20px;
+    font-weight: normal;
+    width: 400px;
+    line-height: 1.5;
+}
+
+.button-group {
+    position: absolute;
+    top: 320%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00ffff;
+    color: #000;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+background-color: #fdf6f0;
+background-image: none;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    
+    padding-top: 80px; /* add top padding to avoid content hiding under fixed header */
+  
+    }
+
+      .main-content {
+        padding-top: 10px; /* Slightly less on mobile */
+    }
+
+    .intro-text {
+        position: static;
+        transform: none;
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+
+    .intro-text1 {
+        position: static;
+        transform: none;
+        text-align: center;
+        font-size: 12px;
+        white-space: normal;
+        margin-bottom: 20px;
+        color: #4d4e4e;
+    }
+
+   .profile-pic {
+    position: static;
+    transform: none;
+    margin: 20px auto 30px auto; /* Increased top margin from 0 to 20px */
+    width: 300px;
+    height: 300px;
+}
+    .intro-text2 {
+        position: static;
+        transform: none;
+        text-align: left;
+        width: 80%;
+        font-size: 18px;
+        margin: 0 auto 10px auto;
+        padding: 0 10px;
+        color: #4d4e4e;
+    }
+.button-group {
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-top: 50px; /* ✅ Push down little bit */
+    margin-bottom: 30px; /* ✅ Breathing space before footer */
+
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 15px;
+    background-color:lightblue;
+        border-radius: 14px;
+
+}
+
+}
+

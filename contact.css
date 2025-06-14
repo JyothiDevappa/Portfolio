@@ -10,7 +10,7 @@ body {
 
 .contact-container {
     text-align: center;
-    padding: 50px;
+    padding: 90px;
 }
 
 .contact-container h1 {
@@ -64,4 +64,34 @@ body {
 
 .contact-form button:hover {
     background-color: #00cccc;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #fdf6f0;
+        background-image: none;
+        color: #222;
+        padding: 30px 20px;
+    }
+
+    .contact-container h1 {
+        color: #333;
+            text-decoration: underline;
+
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        background-color: #ffffff;
+        color: #222;
+    }
+
+    .contact-form button {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .contact-form button:hover {
+        background-color: #00bcd4;
+    }
 }
